@@ -1,0 +1,20 @@
+{# <h1>Name: {{my_name }}</h1> #}
+{# <h2>果物: {{favorite_fruits}}</h2> #}
+{#<h3>Age: {{ my_info.age}}</h3>#}
+
+{# for #}
+<ul>
+   {% for fruit in favorite_fruits %}
+      <li>{{ fruit }}</li>
+      {% endfor %}
+</ul>
+
+{# if #}
+
+{% if 'Grape' in favorite_fruits %}
+ <p>Grapeあります</p>
+{% elif 'lemon' in favorite_fruits %}
+<p>Lemonあります</p>
+{% else %}
+<p>Not Found</p>
+{% endif %}
